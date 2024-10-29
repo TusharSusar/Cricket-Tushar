@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Signika:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(https://www.iplt20.com/assets/images/bottom-section-bg.svg);
+}
+
+/****************************************** Header **********************************************/
+
+header {
+    width: 100%;
+    height: 4rem;
+    /* background-color: hsl(0, 0%, 93%); */
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 10);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  p::selection {
+    background-color: white;
+    color: black;
+  }
+  .logo-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 4rem;
+  }
+  
+  .logo-div > a > h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  
+  .logo-div > a > img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1 px black;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+  }
+  
+  li {
+    margin: 0 auto;
+  }
+  
+  ul > li > a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 7px 20px;
+    transition: transform .3s;
+  }
+  
+  li > a:hover {
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 45px;
+  }
+  
+  .button-container .signup-button , .login-button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 7px 15px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+  
+  .signup-button:hover , .login-button:hover {
+    color: black;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+  }
+  
+
+/******************************************** Main Section ********************************************/
+
+h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin: 35px 0 25px 0;
+    word-spacing: 10px;
+}
+
+.points-table-container {
+    /* width: 100%;
+    height: auto;
+    margin-bottom: 50px; */
+    margin: 20px auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.points-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+}
+
+.points-table th,
+.points-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.points-table thead th {
+    background-color: #ff00a5;
+    color: white;
+    font-weight: bold;
+}
+
+.points-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.points-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.points-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.recent-form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form.win {
+    background-color: green;
+}
+
+.form.lose {
+    background-color: red;
+}
+
+.form.no-result {
+    background-color: gray;
+}
+
+
+/****************************************** Footer ******************************************************/
+
+footer{
+    width: 100%;
+    height: 300px;
+    border-top: 2px solid black;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 0 20px 5px grey;
+}
+
+.footer-container-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.footer-container-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.footer-container-ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-container-ul > li {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-container h3 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.footer-container p {
+    text-align: center;
+    color: white;
+}
+
+.footer-container a {
+    color: white;
+    font-weight: bold;
+}
+
+
+/**************************** Sroll Bar Modification ******************************/
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Background of the scrollbar track */
+    border-radius: 8px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey; /* Color of the scrollbar thumb */
+    border-radius: 8px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Color of the thumb on hover */
+}

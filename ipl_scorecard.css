@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+/****************************************** Header **********************************************/
+
+header {
+    width: 100%;
+    height: 4rem;
+    /* background-color: hsl(0, 0%, 93%); */
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 10);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  p::selection {
+    background-color: white;
+    color: black;
+  }
+  .logo-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 4rem;
+  }
+  
+  .logo-div > a > h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  
+  .logo-div > a > img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1 px black;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+  }
+  
+  li {
+    margin: 0 auto;
+  }
+  
+  ul > li > a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 7px 20px;
+    transition: transform .3s;
+  }
+  
+  li > a:hover {
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 45px;
+  }
+  
+  .button-container .signup-button , .login-button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 7px 15px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  .signup-button:hover , .login-button:hover {
+    color: black;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+  }
+
+/******************************************** Main Section ********************************************/
+
+.scorecard-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: repeat(19, 175px);
+    justify-content: space-evenly;
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
+
+#panel {
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 80%);
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-rows: 30px 30px 30px;
+    grid-template-columns: 100px 100px;
+    gap: 20px;
+    transition: transform .2s;
+}
+
+#panel:hover {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+/* .panel-1 {
+    width: 275px;
+    height: 150px;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-rows: 30px 30px 30px;
+    grid-template-columns: 100px 100px;
+    gap: 20px;
+  } */
+  
+  #name {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+  }
+  
+  #score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #won-statement {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  .overs {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  
+
+h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin: 100px 0 35px 0;
+    word-spacing: 10px;
+}
+
+/****************************************** Footer ******************************************************/
+
+footer{
+    width: 100%;
+    height: 300px;
+    border-top: 2px solid black;
+    background-color: hsl(0, 0%, 93%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-container-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.footer-container-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.footer-container h5 {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+
+.footer-container p {
+    text-align: center;
+}
+
+.footer-container a {
+    color: black;
+    font-weight: bold;
+}
+
+
+/**************************** Sroll Bar Modification ******************************/
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Background of the scrollbar track */
+    border-radius: 8px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey; /* Color of the scrollbar thumb */
+    border-radius: 8px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Color of the thumb on hover */
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+/* General styling */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the form */
+.signup-container {
+    background-color: white;
+    padding: 25px 30px 50px 30px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.signup-container:hover {
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.or {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 50%;
+    border: none;
+    height: 1px; /* or any preferred height */
+    background-color: #ccc; /* For example, gray */
+}
+
+.form {
+    width: 350px;
+}
+
+/* Heading style */
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Label and input styling */
+.signup-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="date"],
+.signup-container select {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Submit button styling */
+.signup-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0000FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-container input[type="submit"]:hover {
+    background-color: #7CB9E8;
+}
+
+/* Terms and conditions text */
+.terms {
+    font-size: 0.9em;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Social login section */
+.social-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.social-btn {
+    width: 80%;
+    padding: 10px 30px 10px 20px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.google {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.facebook {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-wrap: nowrap;
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+}
